@@ -6,3 +6,5 @@ class Solution:
         for i in properties:
             if i[1] < maxDefence:
                 count+=1
+            maxDefence=max(i[1],maxDefence)
+        return count
